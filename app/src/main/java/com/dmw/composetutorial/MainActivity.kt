@@ -19,6 +19,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -45,7 +46,14 @@ class MainActivity : ComponentActivity() {
 //                ) {
 //                    MessageCard(Message("Android", "Jetpack Compose"))
 //                }
-                Conversation(messages = SampleData.conversationSample)
+                Column {
+                    Button(onClick = {
+                        SecondActivity.launch(this@MainActivity)
+                    }) {
+                        Text(text = "启动SecondActivity")
+                    }
+                    Conversation(messages = SampleData.conversationSample)
+                }
             }
         }
 
@@ -146,22 +154,6 @@ fun MessageCard(name: String) {
 //    MessageCard("Android")
 //}
 
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-//@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    ComposeTutorialTheme {
-        Greeting("Android")
-    }
-}
 
 @Composable
 fun Conversation(messages: List<Message>) {
