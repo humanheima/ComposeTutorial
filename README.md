@@ -18,6 +18,12 @@
 
 [在 Jetpack Compose 中为元素添加动画效果](https://developer.android.com/codelabs/jetpack-compose-animation?hl=zh-cn)
 
+### Jetpack Compose 中的状态
+
+走马观花
+
+* [Jetpack Compose 中的状态](https://developer.android.com/codelabs/jetpack-compose-state?hl=zh-cn)
+
 参考链接
 
 * [Jetpack Compose 教程](https://developer.android.com/develop/ui/compose/tutorial?hl=zh-cn)

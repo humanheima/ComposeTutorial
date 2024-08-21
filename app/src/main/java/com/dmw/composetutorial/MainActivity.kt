@@ -32,6 +32,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.dmw.composetutorial.status.ThirdActivity
 import com.dmw.composetutorial.ui.theme.ComposeTutorialTheme
 
 class MainActivity : ComponentActivity() {
@@ -52,6 +53,12 @@ class MainActivity : ComponentActivity() {
                     }) {
                         Text(text = "启动SecondActivity")
                     }
+                    Button(onClick = {
+                        ThirdActivity.launch(this@MainActivity)
+                    }) {
+                        Text(text = "学习Jetpack Compose 中的状态")
+                    }
+
                     Conversation(messages = SampleData.conversationSample)
                 }
             }
