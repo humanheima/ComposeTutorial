@@ -18,7 +18,7 @@ fun WellnessScreen(
 
         WellnessTasksList(
             modifier,
-            list,
+            list = list,
             onCheckedTask = { task, checked ->
                 wellnessViewModel.changeTaskChecked(task, checked)
             },
@@ -26,5 +26,3 @@ fun WellnessScreen(
         )
     }
 }
-
-//fun getWellnessTasks() = List(50) { i -> WellnessTask(i, "Task # $i") }

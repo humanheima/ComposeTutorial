@@ -5,6 +5,8 @@ import androidx.lifecycle.ViewModel
 
 class WellnessViewModel : ViewModel() {
 
+
+    //创建一个可观察的list
     private val _tasks = getWellnessTasks().toMutableStateList()
     val tasks: List<WellnessTask> get() = _tasks
 

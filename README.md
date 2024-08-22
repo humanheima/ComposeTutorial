@@ -24,6 +24,11 @@
 
 * [Jetpack Compose 中的状态](https://developer.android.com/codelabs/jetpack-compose-state?hl=zh-cn)
 
+
+### Jetpack Compose 中的高级状态和附带效应
+
+走马观花
+* [Jetpack Compose 中的高级状态和附带效应](https://developer.android.com/codelabs/jetpack-compose-advanced-state-side-effects)
 参考链接
 
 * [Jetpack Compose 教程](https://developer.android.com/develop/ui/compose/tutorial?hl=zh-cn)
